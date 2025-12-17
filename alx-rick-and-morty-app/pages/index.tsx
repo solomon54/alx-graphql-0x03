@@ -3,6 +3,8 @@ import { GET_EPISODES } from "@/graphql/queries"
 import {  EpisodeProps } from "@/interfaces"
 import EpisodeCard from "@/components/common/EpisodeCard"
 import { useEffect, useState } from "react"
+import ErrorProneComponents from "@/components/ErrorProneComponents"
+import ErrorBoundary from "@/components/ErrorBoundary"
 
 const Home: React.FC = () => {
 
@@ -55,6 +57,11 @@ const Home: React.FC = () => {
       <footer className="bg-[#4CA1AF] text-white py-4 text-center shadow-md">
         <p>&copy; {new Date().getFullYear()} Rick and Morty Fan Page</p>
       </footer>
+      <ErrorBoundary >
+
+      <ErrorProneComponents />
+      </ErrorBoundary>
+
     </div>
   )
 
