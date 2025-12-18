@@ -3,11 +3,7 @@ import { GET_EPISODES } from "@/graphql/queries"
 import {  EpisodeProps } from "@/interfaces"
 import EpisodeCard from "@/components/common/EpisodeCard"
 import { useEffect, useState } from "react"
-<<<<<<< HEAD
 import ErrorProneComponents from "@/components/ErrorProneComponent"
-=======
-import ErrorProneComponents from "@/components/ErrorProneComponents"
->>>>>>> 819b395baa88862d9c8a32f71f152ec393c6458c
 import ErrorBoundary from "@/components/ErrorBoundary"
 
 const Home: React.FC = () => {
@@ -63,8 +59,8 @@ const Home: React.FC = () => {
       </footer>
       <ErrorBoundary >
 
-      <ErrorProneComponents />
       </ErrorBoundary>
+      <ErrorProneComponents />
 
     </div>
   )

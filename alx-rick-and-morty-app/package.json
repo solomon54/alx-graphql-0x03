@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@apollo/client": "^4.0.10",
+    "@sentry/nextjs": "^10.31.0",
+    "@sentry/react": "^10.31.0",
     "@types/graphql": "^14.2.3",
     "graphql": "^16.12.0",
-    "next": "16.0.8",
+    "next": "^16.0.10",
     "react": "19.2.1",
     "react-dom": "19.2.1"
   },
